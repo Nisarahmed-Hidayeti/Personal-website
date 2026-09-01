@@ -1,0 +1,175 @@
+header {
+  background-color: #d8d8d81e;
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: -15%;
+  opacity: 0;
+  transition: cubic-bezier(0, 0, 0.1, 1.5) all 0.9s;
+  /* box-shadow: 0 5px 20px black; */
+  filter: blur(10px);
+}
+
+header img {
+  height: auto;
+  width: 11.5%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.5s;
+  cursor: url("/images/pointer.png"), auto;
+  padding-left: 1%;
+}
+
+header a {
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 2.5%;
+  cursor: url("/images/pointer.png"), auto;
+  transition: 0.5s;
+  padding: 1.7%;
+  border-radius: 5px;
+  font-family: "Varela Round", roboto;
+  position: relative;
+  background-color: rgb(245, 251, 255);
+  width: 200px;
+  box-shadow: 0 0 10px black;
+}
+
+header span {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+header a::after {
+  content: "";
+  background-color: rgb(255, 196, 0);
+  width: 0px;
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  top: var(--yim);
+  left: var(--xim);
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+}
+
+header input {
+  appearance: none;
+}
+
+header a:hover::after {
+  width: 300%;
+  aspect-ratio: 1;
+}
+
+header #Home {
+  margin-left: 40%;
+}
+
+@media (min-width: 600px) {
+  header .newsection {
+    display: none;
+  }
+}
+
+@media (max-width: 1450px) {
+  header span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1150px) {
+  header span {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  header span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 750px) {
+  header span {
+    font-size: 10px;
+  }
+  header img {
+    width: 15%;
+  }
+
+  header a {
+    margin-left: 1.5%;
+  }
+
+  header {
+    padding: 1%;
+  }
+}
+
+@media (max-width: 600px) {
+  header #Home {
+    display: none;
+  }
+  header #About {
+    display: none;
+  }
+  header #Portfolio {
+    display: none;
+  }
+  header #Services {
+    display: none;
+  }
+  header #Contact {
+    display: none;
+  }
+
+  header {
+    padding: 4%;
+  }
+  header a {
+    box-shadow: 0 0 0px black;
+  }
+
+  header img {
+    width: 30%;
+  }
+
+  header span {
+    font-size: 15px;
+  }
+}
+.newsection {
+  width: 20%;
+  height: 60%;
+  position: absolute;
+  left: 77%;
+  top: 20%;
+  transition: all 0.7s;
+  overflow: hidden;
+}
+
+.newsection .ana {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transform: translateY(0%);
+  transition: all 0.7s;
+}
+
+.newsection a {
+  width: 100%;
+  aspect-ratio: 2;
+  margin-left: -0.1px;
+  margin-bottom: 15%;
+}

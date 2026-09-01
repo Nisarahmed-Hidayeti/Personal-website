@@ -1,0 +1,107 @@
+#animation {
+  display: block;
+  opacity: 1;
+  transition: all 1s;
+}
+
+#background {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#background img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  aspect-ratio: 1;
+  width: 0%;
+  /* animation: ani 1s ease-in-out infinite; */
+  transition: all 1s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+@keyframes ani {
+  100% {
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    clip-path: polygon(50% 8.8%, 93% 50%, 50% 91%, 8.8% 50%);
+  }
+}
+
+@keyframes ani2 {
+  100% {
+    left: 15%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    clip-path: polygon(50% 8.8%, 93% 50%, 50% 91%, 8.8% 50%);
+  }
+}
+
+#name {
+  position: absolute;
+  font-size: clamp(2px, 3vw, 60px);
+  transform: translateY(-40%);
+  top: 50%;
+  left: 35.9%;
+  width: 0px;
+  overflow-x: hidden;
+  transition: width 0.8s;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  white-space: nowrap;
+}
+
+#name::-webkit-scrollbar {
+  width: 3px;
+}
+
+.arrowbounce a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  position: absolute;
+  bottom: 1%;
+  cursor: url("/images/pointer.png"), auto;
+  width: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  animation: bounce 1s infinite;
+  border-radius: 50%;
+  font-size: clamp(2px, 7vw, 30px);
+  left: 46%;
+  -webkit-text-stroke: 2px black;
+}
+
+@media (max-width: 600px) {
+  #name {
+    font-size: clamp(2px, 7vw, 60px);
+    left: 18%;
+  }
+  .arrowbounce a {
+    font-size: clamp(2px, 17vw, 30px);
+    width: 10%;
+    aspect-ratio: 1;
+    left: 45%;
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}

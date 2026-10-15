@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,viewport-fit=cover"
+    />
+    <title>Nisar Ahmed Hidayeti — Software Developer &amp; Maker</title>
+    <meta
+      name="description"
+      content="Portfolio of Nisar Ahmed Hidayeti (Ahmed): self-taught software developer, embedded-systems tinkerer and AI enthusiast preparing for computer engineering at university."
+    />
+    <meta name="theme-color" content="#050d1b" />
+    <meta property="og:title" content="Nisar Ahmed Hidayeti — Software Developer & Maker" />
+    <meta
+      property="og:description"
+      content="Python, C++, Arduino/ESP32, web development and open-source AI. Projects, skills and contact."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/mann.png" />
+
+    <link rel="stylesheet" href="./css/heather.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/firstpage.css" />
+    <link rel="stylesheet" href="./css/wholepages.css" />
+    <script defer src="./script/animation.js"></script>
+    <script defer src="./script/general.js"></script>
+    <script defer src="./script/heater.js"></script>
+    <script defer src="./script/secondpage.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/icon.png" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nisar Ahmed Hidayeti",
+        "alternateName": "Ahmed Hidayeti",
+        "url": "https://nisarahmedhidayeti.netlify.app/",
+        "email": "mailto:nisarahmedhidayeti@gmail.com",
+        "jobTitle": "Student & software developer",
+        "knowsLanguage": ["uz", "en", "tr"],
+        "sameAs": [
+          "https://github.com/Nisarahmed-Hidayeti",
+          "https://www.linkedin.com/in/ahmed-hidayeti/",
+          "https://www.youtube.com/@Ahmed-Hidayeti"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ===== LOADING ANIMATION (unchanged) ===== -->
+    <div id="animation">
+      <div id="background">
+        <img id="backgroundimg" src="./images/icon.png" alt="" />
+        <p id="name">isarAhmed &nbsp Hidayeti</p>
+      </div>
+    </div>
+    <!-- ===== /LOADING ANIMATION ===== -->
+
+    <div id="progress" aria-hidden="true"></div>
+    <div class="container">
+      <div id="backgroundbody"></div>
+
+      <header>
+        <nav class="nav" aria-label="Main">
+          <a href="#home" class="brand" aria-label="Home">
+            <img src="./images/logo2.png" alt="NisarAhmed" />
+          </a>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home" data-nav="home">Home</a></li>
+            <li><a href="#about" data-nav="about">About</a></li>
+            <li><a href="#portfolio" data-nav="portfolio">Portfolio</a></li>
+            <li><a href="#services" data-nav="services">Services</a></li>
+            <li><a href="#contact" data-nav="contact">Contact</a></li>
+          </ul>
+          <a href="#contact" class="nav-cta">Let's talk</a>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </header>
+
+      <section class="myfirstpage" id="home">
+        <div id="firstintroduce">
+          <p class="hello">
+            Hi there <span id="waveinghand">👋</span> I'm Ahmed
+          </p>
+          <h1>
+            I build <span class="rotator" id="rotator">AI tools</span><span class="caret"></span>
+          </h1>
+          <p class="lead">
+            Self-taught developer and maker. I write Python and C++, wire up
+            Arduino/ESP32 hardware and design websites &mdash; and I'm preparing
+            for computer engineering at university.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" id="CV" href="./images/mycv.pdf" target="_blank" rel="noopener" download="Ahmed-Hidayeti-CV.pdf">
+              <i class="fa-solid fa-file-arrow-down"></i> Download CV
+            </a>
+            <a class="btn btn-ghost" href="#portfolio">
+              <i class="fa-solid fa-layer-group"></i> View projects
+            </a>
+            <a class="btn btn-ghost" id="email" href="mailto:nisarahmedhidayeti@gmail.com">
+              <i class="fa-solid fa-envelope"></i> Email me
+            </a>
+          </div>
+          <ul class="socials" aria-label="Social links">
+            <li><a id="github" href="https://github.com/Nisarahmed-Hidayeti" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+            <li><a id="LinkedIn" href="https://www.linkedin.com/in/ahmed-hidayeti/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a id="YouTube" href="https://www.youtube.com/@Ahmed-Hidayeti" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a id="X" href="https://x.com/AhmedHidayet507" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a id="instagram" href="https://www.instagram.com/ahmednw06/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="photo-wrap">
+          <div id="picofme" role="img" aria-label="Photo of Ahmed"></div>
+        </div>
+
+        <a href="#about" class="scroll-hint" aria-label="Scroll to About">
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </section>
+    </div>
+
+    <main id="wholepages">
+      <!-- ================= ABOUT ================= -->
+      <section id="about" class="section">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">01 &mdash; About</span>
+            <h2>Curious by default. <span class="grad">I learn best by building.</span></h2>
+          </div>
+
+          <dl class="glance reveal">
+            <div><dt>Education</dt><dd>High school, final year</dd></div>
+            <div><dt>Applying for</dt><dd>Computer Engineering</dd></div>
+            <div><dt>Focus areas</dt><dd>Embedded systems &amp; AI</dd></div>
+            <div><dt>Languages</dt><dd>Uzbek · English · Turkish</dd></div>
+          </dl>
+
+          <div class="stats reveal">
+            <div class="stat"><b data-count="20" data-suffix="+">20+</b><span>websites built</span></div>
+            <div class="stat"><b>7th</b><span>grade &mdash; first Arduino project</span></div>
+            <div class="stat"><b data-count="3">3</b><span>languages spoken fluently</span></div>
+            <div class="stat"><b data-count="2">2</b><span>olympiad podiums</span></div>
+          </div>
+
+          <div class="grid-about">
+            <article class="card reveal">
+              <h3><i class="fa-regular fa-user"></i> Who I am</h3>
+              <p>
+                I'm a high-school senior and self-taught software developer who
+                loves computer science, engineering and building things that
+                work in the real world. I started programming in 7th grade with
+                an Arduino project that automated parts of my home &mdash; and
+                I've been hooked on making things ever since.
+              </p>
+              <p>
+                Today I split my time between Python and C++ projects, embedded
+                electronics, physics and making videos on YouTube. I'm aiming
+                for a computer-engineering degree at an international
+                university.
+              </p>
+              <div class="chips">
+                <span class="chip"><i class="fa-solid fa-graduation-cap"></i> High-school senior</span>
+                <span class="chip"><i class="fa-solid fa-bullseye"></i> Computer engineering</span>
+                <span class="chip"><i class="fa-brands fa-youtube"></i> YouTube creator</span>
+                <span class="chip"><i class="fa-solid fa-robot"></i> AI enthusiast</span>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <h3><i class="fa-solid fa-language"></i> Languages</h3>
+              <ul class="langs">
+                <li><span>Uzbek</span><em>Native</em><i class="dots" data-level="5"></i></li>
+                <li><span>English</span><em>Fluent</em><i class="dots" data-level="4"></i></li>
+                <li><span>Turkish</span><em>Fluent</em><i class="dots" data-level="4"></i></li>
+                <li><span>Russian</span><em>Learning</em><i class="dots" data-level="2"></i></li>
+                <li><span>Arabic</span><em>Learning</em><i class="dots" data-level="1"></i></li>
+              </ul>
+              <h3 class="mt"><i class="fa-regular fa-heart"></i> Beyond code</h3>
+              <div class="chips">
+                <span class="chip">🔭 Astronomy</span>
+                <span class="chip">⚛️ Physics</span>
+                <span class="chip">♟️ Chess (~1000 Elo)</span>
+                <span class="chip">🧩 Rubik's Cube</span>
+                <span class="chip">🔌 Electronics</span>
+                <span class="chip">🐧 Linux</span>
+                <span class="chip">🚀 Sci-fi</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="sub-head reveal"><h3>Skills &amp; tools</h3></div>
+          <div class="grid-skills">
+            <article class="card skill reveal">
+              <i class="fa-solid fa-code"></i>
+              <h4>Programming</h4>
+              <div class="chips"><span class="chip gold">Python</span><span class="chip gold">C++</span><span class="chip gold">JavaScript</span><span class="chip">HTML / CSS</span><span class="chip">Embedded C</span></div>
+            </article>
+            <article class="card skill reveal">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <h4>Tools &amp; web</h4>
+              <div class="chips"><span class="chip">React</span><span class="chip">Git &amp; GitHub</span><span class="chip">Linux</span></div>
+            </article>
+            <article class="card skill reveal">
+              <i class="fa-solid fa-microchip"></i>
+              <h4>Hardware &amp; IoT</h4>
+              <div class="chips"><span class="chip">Arduino</span><span class="chip">ESP32</span><span class="chip">Sensors</span><span class="chip">MQTT</span></div>
+            </article>
+            <article class="card skill reveal learning">
+              <i class="fa-solid fa-seedling"></i>
+              <h4>Currently learning</h4>
+              <div class="chips"><span class="chip">Advanced Python</span><span class="chip">C++ &amp; DSA</span><span class="chip">PCB design</span><span class="chip">Machine learning</span></div>
+            </article>
+          </div>
+
+          <div class="grid-two">
+            <div>
+              <div class="sub-head reveal"><h3>Achievements</h3></div>
+              <div class="ach">
+                <article class="card ach-card reveal"><span class="medal">🥉</span><div><b>3rd place</b><p>School math olympiad</p></div></article>
+                <article class="card ach-card reveal"><span class="medal">🥈</span><div><b>2nd place</b><p>School science olympiad</p></div></article>
+                <article class="card ach-card reveal"><span class="medal">⚛️</span><div><b>Physics club leader</b><p>Leading my school's physics club</p></div></article>
+              </div>
+            </div>
+            <div>
+              <div class="sub-head reveal"><h3>My journey</h3></div>
+              <ol class="timeline">
+                <li class="reveal"><b>7th grade</b><p>First lines of code &mdash; an Arduino project that automated parts of my home.</p></li>
+                <li class="reveal"><b>Smart Home Automation</b><p>Built an Arduino + ESP32 system with sensors, Wi-Fi and MQTT.</p></li>
+                <li class="reveal"><b>20+ websites</b><p>From a bakery site to games and tools &mdash; learning by shipping.</p></li>
+                <li class="reveal"><b>Phoenix Assistant</b><p>Building a local, privacy-friendly desktop AI assistant (ongoing).</p></li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="sub-head reveal"><h3>Goals for 2027</h3></div>
+          <ul class="goals reveal">
+            <li class="done"><i class="fa-solid fa-circle-check"></i> Launch my personal website</li>
+            <li><i class="fa-regular fa-circle"></i> Release Phoenix Assistant v1.0</li>
+            <li><i class="fa-regular fa-circle"></i> Become proficient in C++</li>
+            <li><i class="fa-regular fa-circle"></i> Prepare for international universities</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= PORTFOLIO ================= -->
+      <section id="portfolio" class="section">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">02 &mdash; Portfolio</span>
+            <h2>Things I've <span class="grad">built &amp; shipped</span></h2>
+          </div>
+
+          <div class="grid-projects">
+            <article class="card project featured reveal">
+              <div class="project-top">
+                <span class="badge live"><i class="fa-solid fa-circle"></i> In progress</span>
+                <i class="fa-solid fa-feather-pointed project-icon"></i>
+              </div>
+              <h3>Phoenix Assistant</h3>
+              <p>
+                An open-source desktop AI assistant written in Python. It's
+                designed to run locally, so your data stays on your machine
+                &mdash; a privacy-friendly alternative to cloud assistants.
+              </p>
+              <div class="chips"><span class="chip">Python</span><span class="chip">AI</span><span class="chip">Open source</span><span class="chip">Privacy-first</span></div>
+              <a class="link" href="https://github.com/Nisarahmed-Hidayeti" target="_blank" rel="noopener">See on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+
+            <article class="card project reveal">
+              <div class="project-top">
+                <span class="badge done"><i class="fa-solid fa-check"></i> Completed</span>
+                <i class="fa-solid fa-house-signal project-icon"></i>
+              </div>
+              <h3>Smart Home Automation</h3>
+              <p>
+                An Arduino + ESP32 home-automation system that reads sensors,
+                connects over Wi-Fi and communicates through MQTT. My very
+                first big build &mdash; and what got me into engineering.
+              </p>
+              <div class="chips"><span class="chip">Arduino</span><span class="chip">ESP32</span><span class="chip">MQTT</span><span class="chip">IoT</span></div>
+              <a class="link" href="https://github.com/Nisarahmed-Hidayeti" target="_blank" rel="noopener">See on GitHub <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+          </div>
+
+          <div class="sub-head reveal"><h3>Websites <small>(20+ built)</small></h3></div>
+          <div class="grid-sites">
+            <article class="card site reveal"><i class="fa-solid fa-cake-candles"></i><h4>Beykoz Butik Pasta</h4><p>A website for a bakery.</p></article>
+            <article class="card site reveal"><i class="fa-solid fa-user-astronaut"></i><h4>Personal Portfolio</h4><p>The site you're looking at, rebuilt and modernised.</p></article>
+            <article class="card site reveal"><i class="fa-solid fa-table-cells-large"></i><h4>Tic-Tac-Toe</h4><p>A classic game in the browser.</p></article>
+            <article class="card site reveal"><i class="fa-regular fa-clock"></i><h4>Working Clock</h4><p>A working clock in the browser.</p></article>
+          </div>
+
+          <div class="sub-head reveal"><h3>On YouTube</h3></div>
+          <div class="videos" id="videos"></div>
+          <p class="center reveal">
+            <a class="btn btn-ghost" href="https://www.youtube.com/@Ahmed-Hidayeti" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> Visit my channel</a>
+            <a class="btn btn-ghost" href="https://github.com/Nisarahmed-Hidayeti" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> More on GitHub</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= SERVICES ================= -->
+      <section id="services" class="section">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">03 &mdash; Services</span>
+            <h2>How I can <span class="grad">help you</span></h2>
+          </div>
+          <div class="grid-services">
+            <article class="card service reveal">
+              <span class="svc-ico"><i class="fa-solid fa-laptop-code"></i></span>
+              <h3>Web development</h3>
+              <p>Fast, responsive websites for people and small businesses: portfolios, landing pages and simple web apps with clean code.</p>
+              <ul><li>Responsive HTML / CSS / JS</li><li>Portfolio &amp; business sites</li><li>Hosting &amp; deployment help</li></ul>
+            </article>
+            <article class="card service reveal">
+              <span class="svc-ico"><i class="fa-solid fa-microchip"></i></span>
+              <h3>Embedded &amp; IoT</h3>
+              <p>Prototypes that connect the physical and digital world &mdash; from a single sensor to a full home-automation setup.</p>
+              <ul><li>Arduino &amp; ESP32 projects</li><li>Sensors, relays &amp; Wi-Fi / MQTT</li><li>Wiring guides &amp; documentation</li></ul>
+            </article>
+            <article class="card service reveal">
+              <span class="svc-ico"><i class="fa-brands fa-python"></i></span>
+              <h3>Python &amp; AI tools</h3>
+              <p>Useful scripts and desktop tools: automation, data handling and local AI assistants that respect your privacy.</p>
+              <ul><li>Automation scripts</li><li>Desktop apps</li><li>Local AI experiments</li></ul>
+            </article>
+          </div>
+
+          <div class="process reveal">
+            <div class="step"><b>1</b><h4>Talk</h4><p>You tell me the idea and goals.</p></div>
+            <div class="step"><b>2</b><h4>Plan</h4><p>We agree on scope and timeline.</p></div>
+            <div class="step"><b>3</b><h4>Build</h4><p>I code it with regular updates.</p></div>
+            <div class="step"><b>4</b><h4>Deliver</h4><p>Tested, documented and handed over.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section id="contact" class="section">
+        <div class="wrap">
+          <div class="section-head reveal">
+            <span class="eyebrow">04 &mdash; Contact</span>
+            <h2>Let's build <span class="grad">something together</span></h2>
+          </div>
+
+          <div class="grid-contact">
+            <div class="card contact-info reveal">
+              <p>
+                Have a project, a question or just want to say hi? Send a
+                message &mdash; I'll get back to you as soon as I can.
+              </p>
+              <ul class="contact-list">
+                <li><i class="fa-solid fa-envelope"></i><a href="mailto:nisarahmedhidayeti@gmail.com">nisarahmedhidayeti@gmail.com</a></li>
+                <li><i class="fa-brands fa-github"></i><a href="https://github.com/Nisarahmed-Hidayeti" target="_blank" rel="noopener">Nisarahmed-Hidayeti</a></li>
+                <li><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/ahmed-hidayeti/" target="_blank" rel="noopener">ahmed-hidayeti</a></li>
+                <li><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/@Ahmed-Hidayeti" target="_blank" rel="noopener">@Ahmed-Hidayeti</a></li>
+                <li><i class="fa-solid fa-chess-knight"></i><a href="https://www.chess.com/member/ahmednw06" target="_blank" rel="noopener">Play me on Chess.com</a></li>
+              </ul>
+            </div>
+
+            <form class="card contact-form reveal" id="contactForm" name="contact" method="POST" action="/?success=1" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="hp"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+              <div class="row">
+                <label>Name<input type="text" name="name" required autocomplete="name" placeholder="Your name" /></label>
+                <label>Email<input type="email" name="email" required autocomplete="email" placeholder="you@example.com" /></label>
+              </div>
+              <label>Subject<input type="text" name="subject" placeholder="What's it about?" /></label>
+              <label>Message<textarea name="message" rows="5" required placeholder="Tell me a bit about your idea…"></textarea></label>
+              <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Send message</button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="wrap footer-in">
+          <span>© <span id="year">2026</span> Nisar Ahmed Hidayeti. Built by hand with HTML, CSS &amp; JS.</span>
+          <a href="#home">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
